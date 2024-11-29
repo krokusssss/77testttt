@@ -1,0 +1,488 @@
+/* Styl dla telefonów */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Zmniejszenie ogólnego rozmiaru czcionki */
+    }
+
+    header {
+        flex-direction: column; /* Zmiana układu headera */
+        padding: 15px 0;
+    }
+
+    header img {
+        width: 40px; /* Zmniejszenie rozmiaru zdjęcia */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu w pionie */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Większe odstępy między pozycjami menu */
+    }
+
+    .hero {
+        height: 50vh; /* Zmniejszenie wysokości sekcji hero */
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Zmniejszenie rozmiaru tekstu w hero */
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 40px 15px; /* Zmniejszenie paddingu sekcji */
+    }
+
+    #departments .department,
+    #departments .department2,
+    #departments .department3,
+    #departments .department4,
+    #departments .department5 {
+        padding: 15px; /* Mniejsze odstępy wewnętrzne */
+    }
+
+    #departments h3 {
+        font-size: 20px; /* Mniejszy rozmiar nagłówka */
+    }
+
+    #departments p {
+        font-size: 16px; /* Mniejszy rozmiar tekstu */
+    }
+
+    .news-item {
+        padding: 15px; /* Dostosowanie paddingu dla aktualności */
+    }
+
+    .news-item h3 {
+        font-size: 20px; /* Mniejszy rozmiar nagłówka */
+    }
+
+    .news-item p {
+        font-size: 16px;
+    }
+
+    #recruitmentForm {
+        padding: 15px; /* Zmniejszenie paddingu formularza */
+    }
+
+    #recruitmentForm label {
+        font-size: 16px;
+    }
+
+    #recruitmentForm input,
+    #recruitmentForm textarea {
+        font-size: 14px; /* Zmniejszenie rozmiaru pól tekstowych */
+    }
+
+    .about-row {
+        flex-direction: column; /* Zmiana układu na pionowy */
+        align-items: center;
+    }
+
+    .about-img, 
+    .about-img1 {
+        width: 80%; /* Zdjęcia zajmują większą szerokość w mobilnym układzie */
+        margin: 20px 0;
+    }
+
+    .about-text1, 
+    .about-text2, 
+    .about-text3, 
+    .about-text4 {
+        width: 100%; /* Pełna szerokość dla tekstów */
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+/* Styl dla całej strony */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(270deg, #2c3e50, #e74c3c, #2c3e50);
+    background-size: 600% 600%;
+    animation: colorShift 8s ease infinite;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    top: 10px;
+    width: 50px; /* rozmiar zdjęcia*/
+    height: auto;
+    border-radius: 50%; /* okrągłość zdjęcia*/
+    position: absolute;
+}
+
+header img.left {
+    left: 10px;
+}
+
+header img.right {
+    right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Sekcja hero */
+.hero {
+    background-image: url('zdj.png'); /* Dodaj odpowiednie tło */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #c0392b;
+}
+
+/* Sekcje */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+/* Sekcja Oddziały */
+#departments .department {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #e74c3c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#departments .department2 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#departments .department3 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#departments .department4 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0080ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#departments .department5 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #009900;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#departments .department:hover {
+    transform: translateY(-5px);
+}
+
+#departments .department2:hover {
+    transform: translateY(-5px);
+}
+
+#departments .department3:hover {
+    transform: translateY(-5px);
+}
+
+#departments .department4:hover {
+    transform: translateY(-5px);
+}
+
+#departments .department5:hover {
+    transform: translateY(-5px);
+}
+
+#departments h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#departments p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Sekcja Aktualności */
+.news-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2c3e50;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Sekcja Rekrutacja */
+#recruitment p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#recruitment button {
+    display: block;
+    margin: 0 auto;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recruitment button:hover {
+    background-color: #34495e;
+}
+
+#recruitmentForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#recruitmentForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+#recruitmentForm input,
+#recruitmentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#recruitmentForm button[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recruitmentForm button[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+/* Sekcja Kontakt */
+#contact {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Stopka */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about-row reverse {
+    flex-direction: row-reverse; /* Zmienia kolejność obrazka i tekstu */
+}
+
+.about-img {
+    width: 13%;
+    height: auto;
+    border-radius: 60px;
+    box-shadow: 0 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px 200px 0 0;
+}
+
+.about-img1 {
+    width: 13%;
+    height: auto;
+    border-radius: 60px;
+    box-shadow: 20px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 0 0 200px;
+}
+
+.about-text1 {
+    width: 55%;
+    font-size: 20px;
+    color: #0088FF;
+    padding: 20px;
+}
+
+.about-text2 {
+    width: 55%;
+    font-size: 20px;
+    color: #999900;
+    padding: 20px;
+}
+
+.about-text3 {
+    width: 55%;
+    font-size: 20px;
+    color: #808080;
+    padding: 20px;
+}
+
+.about-text4 {
+    width: 55%;
+    font-size: 20px;
+    color: #00cc00;
+    padding: 20px;
+}
+
+.more-description {
+    display: none;
+}
