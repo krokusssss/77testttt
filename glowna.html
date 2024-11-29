@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona główna jednostki Los Santos Police Department (LSPD). Informacje o oddziałach, aktualnościach i historii policji w Los Santos.">
+    <title>Los Santos Police Department (LSPD) - Strona Główna</title>
+    <link rel="stylesheet" href="styles11.css"> <!-- Link do pliku CSS -->
+    <script src="scripts.js" defer></script> <!-- Link do pliku JS -->
+</head>
+<body>
+    <!-- Górny pasek nawigacyjny -->
+    <header>
+        <img src="logo77.png" alt="Logo LSPD" class="left"> 
+        <nav>
+            <ul>
+                <li><a href="glowna.html">Strona główna</a></li>
+                <li><a href="#departments">Wydziały</a></li>
+                <li><a href="officers.html">Funkcjonariusze</a></li>
+                <li><a href="loading.html">Ogłoszenia</a></li>
+                <li><a href="#recruitment">Zgłoszenia</a></li>
+                <li><a href="galery.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <img src="logo.png" akt="logo 77" class="right">
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Los Santos Police Department</h1>
+            <p>Chronimy i służymy społeczności Los Santos od ponad 100 lat</p>
+        </div>
+    </section>
+
+    <!-- Sekcja O Nas -->
+    <section id="about">
+        <h2>O nas</h2>
+        <p>Los Santos Police Department to jedna z najważniejszych frakcji na serwerze 77RP. Naszym celem jest zapewnienie porządku i bezpieczeństwa w mieście Los Santos. Każdego dnia dbamy o to, by mieszkańcy mogli czuć się bezpiecznie, a przestępcy byli skutecznie ścigani.</p>
+        <p>Na naszej stronie znajdziesz informacje o naszej frakcji, aktualnych wydarzeniach, a także dowiesz się, jak dołączyć do naszego zespołu. Jeśli masz pytania lub potrzebujesz pomocy, zapraszamy do kontaktu.</p>
+        <!-- Pierwszy rząd: tekst po lewej, obraz po prawej -->
+    <div class="about-row reverse">
+        <p class="about-text1">Los Santos Police Department (w skrócie LSPD) to departament policji działający w mieście Los Santos. Funkcjonariusze należący do tej jednostki charakteryzują się czarnymi mundurami i naszywkami "POLICE</p>
+        <img src="logo.png" alt="Zdjęcie 1" class="about-img">
+    </div>
+        <!-- Drugi rząd: obraz po lewej, tekst po prawej -->
+    <div class="about-row">
+        <img src="logo2.webp" alt="Zdjęcie 2" class="about-img1">
+        <p class="about-text2">Los Santos Sheriff Department- Głównym zdaniem szeryfów jest patrolowanie i pilnowanie przestrzeganie prawa na obszarach okolic Sandy Shores, Grapespeed oraz Paleto Bay oraz Los Santos. Szeryfosto zawsze służy wsparciem dla PD w Los Santos w razie sytuacji nadzwyczajnych.</p>
+    </div>
+    <!-- Trzeci rząd: tekst po lewej, obraz po prawej -->
+    <div class="about-row reverse">
+        <p class="about-text3">San Andreas State Police jest agencja rządową stanu San Andreas, pełni rolę policji stanowej. Organizacja odpowiedzialna za egzekwowanie prawa. Działanie frakcji skupia się na patrolach dróg stanowych oraz protekcji obiektów podlegających pod stan. Departament posiada również specjalną jednostkę odpowiedzialną za ochronę wyższych urzędników stanowych i członków sądownictwa stanowego.</p>
+        <img src="logo3.png" alt="Zdjęcie 4" class="about-img">
+    </div>
+        <!-- Czwarty rząd: obraz po lewej, tekst po prawej -->
+    <div class="about-row">
+        <img src="logo4.webp" alt="Zdjęcie 3" class="about-img1">
+        <p class="about-text4">SAN ANDREAS STATE PARK RANGERS to jedna z licznych straży leśnych funkcjonujących w obrebię San Andreas. Głownym zadaniem San Andreas Park Rangers jest dbanie o zieleń, a także poza partroli lasów, dróg off-roadowych zadaniem San Andreas Park Rangers jest prowadzenie poszukiwań, dbanie o życie jak i mienie ludzi i zwierząt - działa też w pomocy dla innych instytucji rządowych. SAPR jest upoważnione do wystawiania mandatów oraz pouczeń osobą zakłócających lub niszczących porządek i przyrodę, a nawet tymczasowego zatrzymania podejrzanego aby dalej przekazać odpowiednim instytucją.</p>
+    </div>
+    </section>
+
+    <!-- Sekcja Wydziały -->
+    <section id="departments">
+        <h2>Wydziały LSPD</h2>
+        <div class="department2" onclick="toggleDescription('desc1')">
+            <h3>Oddział S.W.A.T. / S.E.R.T.</h3>
+            <p>Specjalne jednostki taktyczne do zwalczania najgroźniejszych przestępców.</p>
+            <div id="desc1" class="more-description">
+            <p>SWAT oznacza zespół, bądź jednostką realizującą działania taktyczne przy wsparciu specjalistycznego sprzętu. W LS nie tylko stricte policyjnego, ale również znajdującego się na wyposażeniu armii, stąd też możemy zobaczyć specjalsów ze SWAT-u nie tylko w ciemnych (czarnych) mundurach taktycznych, ale też w barwach identyfikowanych z wojskiem, zielonym, szarym.</p>
+        </div>
+        </div>
+        <div class="department" onclick="toggleDescription('desc2')">
+            <h3>Internal Affairs Division</h3>
+            <p>Wydział wewnętrzny zajmujący się przede wszystkim nadzorowanie egzekwowania przez funkcjonariuszy procedur.</p>
+            <div id="desc2" class="more-description">
+            <p>Więcej informacji: Jest to jednostka wewnętrzna Los Santos Police Department zajmująca się egzekwowaniem prawa, wytycznych, etyki zawodowej oraz nagradzaniem i karaniem funkcjonariuszy za pomocą wpisów do akt oraz środków zapobiegawczych</p>
+        </div>
+        </div>
+        <div class="department3" onclick="toggleDescription('desc3')">
+             <h3>United States Marshall & Marshall Agency</h3>
+            <p>Marshall US jednostka odpowiedzialna za konwoje oraz obstawianie rozpraw sądowych bądź transportem ważnych osób. Dodatkowe zadania i główne tej jednostki polegają na namierzaniu i zatrzymywaniu ludzi bądź pojazdów które są poszukiwanie za przestępstwa.</p>
+            <div id="desc3" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
+        </div>
+        </div>
+        <div class="department4" onclick="toggleDescription('desc5')">
+            <h3>Detective Task Unit</h3>
+            <p>Wydział detektywistyczny, powołany głównie do działań undercover. Zajmują się oni zabezpieczaniem dowodów, współpracą z koronerem, prowadzeniem dochodzeń i śledztw.</p>
+            <div id="desc5" class="more-description">
+            <p>Więcej informacji: Na ten moment brak...</p>
+        </div>
+        </div>
+        <div class="department5" onclick="toggleDescription('desc6')">
+            <h3>Drug Observation Agency</h3>
+            <p>Wydział narkotykowy, powołany głównie do działań zwalczających handel oraz wytwarzanie substacji psychoaktywnych.</p>
+            <div id="desc6" class="more-description">
+            <p>Więcej informacji: Zadaniem owej agencji w głównym stopniu jest walka z narkotykami, przemytami, plantacjami, transakcjami, ćpunami czy obserwacjami i zbieraniem informacji. DOA konfiskuje narkotyki i pieniądze pochodzące z handlu i tym podobnymi akcjami. Podejmuje także działania mające na celu zapobieganie sprzedaży narkotyków, plantacji nartkotyków itp. Współpracuje również z lokalnymi organami ścigania, DTU, departamentem policji.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Aktualności -->
+    <section id="news">
+        <h2>Aktualności</h2>
+        <div class="news-item" onclick="toggleDescription('desc7')">
+            <h3>DUŻA ZMIANA W STRUKTURACH!!</h3>
+            <div id="desc7" class="more-description">
+            <p>Dnia 28.11 High Command wraz z kilkoma funkcjonariusza złożyło wypowiedzenie z jednostki na ich stanowisko wszedło jakto ujęli ludzie "nowe pokolenie". Na stanowisko 101 po Loli Badclick wstąpił Youccambe Sauvage, na stanowisko 102 po Mason Murphy przejmuje stołek Raul Danzano. Kolejne stanowisko 103 po Christopher Burns przejmuje Blake Drake, przedostatnim stopniem jest 104 po Leo Badclick obejmuje Geralt Wolf. Dodatkowym stopniem jest 105 którą posadę przejmuje Alexander Smith. Zobaczymy czy działania starej gwardi będą zmieniane? Czy nowy High Command będzie się dobrze sprawował i znajdzie odpowiedzi na błędy których nie sprostowano?</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Rekrutacja -->
+    <section id="recruitment">
+        <h2>Zgłoś Funkcjonariusza!</h2>
+        <p>Jakiś funkcjonariusz złamał prawo? Źle postąpił? Napisz do naszej jednostki wewnętrznej! Oni się tym zajmą!</p>
+        <button onclick="window.location.href='pytania.html' " class="button-link">Złóż aplikację</button>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Adres: Alta Street, Los Santos</p>
+        <p>Telefon: 376211333</p>
+        <p>Email: BRAK</p>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024 Los Santos Police Department. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Prosty skrypt JS do obsługi formularza -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleRecruitmentForm() {
+            const form = document.getElementById('recruitmentForm');
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+        
+        function toggleDescription(id) {
+        var desc = document.getElementById(id);
+        if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
+        } else {
+            desc.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
